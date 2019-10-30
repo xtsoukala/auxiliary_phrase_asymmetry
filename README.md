@@ -1,18 +1,10 @@
 # Bilingual Dual-path model
 
-![Bilingual dual-path model architecture](img/bilingual-dual-path.png)
+![Bilingual dual-path model architecture](img/code-switched-dual-path.png)
 
 Dual-path is a computational model of (monolingual) sentence production by [Chang, 2002](https://sites.google.com/site/sentenceproductionmodel/Home/chang-2002). Tutorial: https://sites.google.com/site/sentenceproductionmodel/Home/tutorial
 
-
-From Chang, 2002:
-```
-The learning algorithm is back-propagation, using a modified momentum algorithm (doug momentum)
-Doug momentum: similar to standard momentum descent with the exception that the pre-momentum
-weight step vector is bounded so that its length cannot exceed 1.0 (Rohde, 1999).
-
-The output and role units use the softmax activation function. All other units use the logistic activation function.
-```
+The latest Bilingual Dual-path can be found [here](https://github.com/xtsoukala/dual_path)
 
 It it recommended to run the Bilingual Dual-path model using Python3.6 and above. To install requirements:
 
@@ -186,5 +178,3 @@ pron aux participle det noun .	True	True	AGENT=pron,GRANDMOTHER;AAL=GIVE;PATIENT
 ```
 
 The default csv headers are: epoch, produced_sentence, target_sentence, is_grammatical, meaning, is_code_switched, switched_type, produced_pos, target_pos, correct_tense, correct_definiteness, message
-
-Note: The input files for the gender error experiment can be found [here](https://github.com/xtsoukala/gender_error_experiment)
